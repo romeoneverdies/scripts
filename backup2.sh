@@ -1,9 +1,11 @@
 #!/bin/bash
 #  exec 1> >(logger -s -t $(basename $0)) 2>&1
 
-DEFOLDERLIST="/folder-list.txt"
-DEBACKPATH="/backup"
-DEARCHPREFIX="backup_personels"
+# these are defaut values can be overridden at the cli
+DEFOLDERLIST="/folder-list.txt"  #list of file to backup
+DEBACKPATH="/backup"            #where to back them up
+DEARCHPREFIX="backup_personels"  #prefix for the archive file
+
 
 
 
