@@ -8,6 +8,9 @@
 # Short-Description: Start daemon at boot time
 # Description:       Enable iptables firewall.
 ### END INIT INFO
+
+# this script looks for anything starting with the following and loads the last file found (hopefully unique...)
+
 RULES=`ls  /etc/iptables-firewall-rules* | tail -n 1`
 
 
